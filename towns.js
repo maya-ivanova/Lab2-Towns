@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#btnDelete').click(deleteTown);
 	$('#btnAdd').click(addTown);
-        $('#btnShuffle').click(shuffleTowns);
+    $('#btnShuffle').click(shuffleTowns);
 });
 
 function deleteTown() {
@@ -20,7 +20,7 @@ function deleteTown() {
 	    showMessage(townName + " not found.");
 }
 
-//this is the second part of the task performed by the Shuffler
+//this is the second part of the task performed by the Styler
 function showMessage(msg) { 
 	$('#result').text(msg).css("display", "block"); 
 	setTimeout(function () { 

@@ -2,5 +2,5 @@
 Code for the Git and GitHub Exercise
 
 #me - Editor
-#jenkins - Shuffle
+#jenkins - Shuffler
 #docker - Styler

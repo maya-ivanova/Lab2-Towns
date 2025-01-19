@@ -15,9 +15,17 @@ function deleteTown() {
 		}
 	}
 	if (removed)
-		$('#result').text(townName + " deleted.");
+	    showMessage(townName + " deleted.");
 	else
-		$('#result').text(townName + " not found.");
+	    showMessage(townName + " not found.");
+}
+
+//this is the second part of the task performed by the Shuffler
+function showMessage(msg) { 
+	$('#result').text(msg).css("display", "block"); 
+	setTimeout(function () { 
+	$('#result').hide('blind', {}, 500); 
+}, 3000); 
 }
 
 //this is intended by the Shuffler on jenkinsVM
